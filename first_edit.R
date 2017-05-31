@@ -1,3 +1,4 @@
+setwd("/Users/jane/Desktop/Data-Clean-Up-Project")
 dirty_data_1<- read.csv("dirty_data.csv",header=TRUE,strip.white = TRUE)
 summary(dirty_data_1)
 library(tidyr)
@@ -20,3 +21,4 @@ dirty_data_1$Street<-gsub("[sS]treet","Str.",dirty_data_1$Street)
 dirty_data_1$Street.2<-gsub("[sS]treet","Str.",dirty_data_1$Street.2)
 dirty_data_1$Street<-gsub("[rR][oa][ao]d","Road",dirty_data_1$Street)
 dirty_data_1$Street.2<-gsub("[rR][oa][ao]d","Road",dirty_data_1$Street.2)
+
